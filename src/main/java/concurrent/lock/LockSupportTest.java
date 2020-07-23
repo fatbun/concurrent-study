@@ -1,6 +1,5 @@
-package lock;
+package concurrent.lock;
 
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.LockSupport;
 
 /**

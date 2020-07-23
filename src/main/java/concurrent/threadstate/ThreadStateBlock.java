@@ -19,7 +19,7 @@ public class ThreadStateBlock implements Runnable {
     @Override
     public void run() {
         synchronized (ThreadStateBlock.class) {
-            System.out.println("i am a lock...");
+            System.out.println("i am a concurrent.lock...");
             while (true) {
 
             }

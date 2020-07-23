@@ -1,4 +1,4 @@
-package lock;
+package concurrent.lock;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
@@ -20,7 +20,7 @@ import java.util.concurrent.TimeoutException;
  * java.util.concurrent.TimeoutException
  * at java.util.concurrent.CyclicBarrier.dowait(CyclicBarrier.java:257)
  * at java.util.concurrent.CyclicBarrier.await(CyclicBarrier.java:435)
- * at lock.CyclicBarrierTest.lambda$main$1(CyclicBarrierTest.java:24)
+ * at concurrent.lock.CyclicBarrierTest.lambda$main$1(CyclicBarrierTest.java:24)
  * at java.lang.Thread.run(Thread.java:745)
  */
 public class CyclicBarrierTest {
