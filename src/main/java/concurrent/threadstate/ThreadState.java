@@ -1,4 +1,4 @@
-package concurrent;
+package concurrent.threadstate;
 
 import java.util.concurrent.locks.LockSupport;
 

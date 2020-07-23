@@ -1,10 +1,10 @@
-package concurrent;
+package concurrent.synchronize;
 
 /**
  * @author Ben Li.
  * @since: 2020/7/22 4:14 下午
  */
-public class SynchronizedTest2 {
+public class BlockCodeTest2 {
 
     private Integer count = 0;
 
@@ -25,7 +25,7 @@ public class SynchronizedTest2 {
     }
 
     public static void main(String[] args) {
-        SynchronizedTest2 s = new SynchronizedTest2();
+        BlockCodeTest2 s = new BlockCodeTest2();
 
         Thread[] threads = new Thread[10];
         for (int i = 0; i < threads.length; i++) {

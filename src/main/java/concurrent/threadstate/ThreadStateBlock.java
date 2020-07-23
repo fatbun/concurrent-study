@@ -1,4 +1,4 @@
-package concurrent;
+package concurrent.threadstate;
 
 public class ThreadStateBlock implements Runnable {
 
