@@ -28,11 +28,20 @@ public class SynchronousQueueTest {
             }
         }).start();
 
+        new Thread(() -> {
+            try {
+                queue.put("b");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }).start();
+
         try {
-            Thread.sleep(1000);
+            Thread.sleep(100);
             System.out.println("size:" + queue.size());
             System.out.println("take:" + queue.take());
             System.out.println("size:" + queue.size());
+            System.out.println("take:" + queue.take());
 
         } catch (InterruptedException e) {
             e.printStackTrace();
